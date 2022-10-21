@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador e codificador</title>
+    <link rel="stylesheet" href="cod.css">
+    <link rel="shortcut icon" href="imagens/logoCrislaine.png" type="image/x-icon">
+
+</head>
+<body>
+    <div class="background"></div>
+
+     <main >
+         <header class="cabecalho">
+           <h1>Mensagem para Codificadar</h1>
+         <div class="container-input"> <!--Classe para fazer a parte de receber mensagem-->
+         <div class="input">
+            <textarea  id="input" placeholder="Digite seu texto aqui..."></textarea>
+            <select class id="sumir">
+            <label id="incremento" for="chave"> Incremento:</label>
+            <button onclick="prev()">-</button>
+            <span id="key">1</span>
+            <button onclick="next()">+</button><br/><br/>
+            <div class="bootao"></div>
+            <button onclick="cod" id="big">Codificar</button>
+            <button onclick="dcod" id="bigd">DesCodificar</button>
+            </div>
+            </select>
+           
+          
+        </div>
+        </div>
+    </header>
+    <div className="container">
+        <form >
+            <h1> Linguagem</h1>
+            <select class="chave-escolha">
+                <option value="selecione" disabled selected>Selecionar</option>
+                <option value="CC" > Cifra de Cesar</option>
+                <option value="base"> Base 64</option>
+                
+              </select>
+              </div>
+        </form>
+    </div>
+        <div id="output">
+            <h1> Texto Codificado</h1>
+            <h2>Sua mensagem aparecerá aqui!</h2>
+         </div>
+        </div>
+            
+         </div>
+     </main>
+
+     <script  defer src="./script.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

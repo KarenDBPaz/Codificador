@@ -1,0 +1,77 @@
+body
+ {
+    @media (min-width:300px) and (max-width:400px)
+
+    
+    margin:0%; 
+    padding:0%;
+    color: white;
+    background-color: rgb(22, 21, 21);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Fonte*/
+    background-image: url(./logo.jpg.jpg);
+    background-size: cover;
+    background-position: center; /*Posição central, tem como colocar uma scrool e a tela ficar rodando?*/
+    height: 100vh; /*Tela toda*/
+    width: 100%;
+    display: flex;
+    
+}
+ main {
+    
+    justify-content:center;
+    padding: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+    align-items: center;
+
+ }
+ header{
+   
+    justify-content: center;
+    align-items: center;
+    
+ }
+ 
+
+ button{
+   
+    justify-content: space-between;
+    align-items:center;
+    padding:2px;
+    transition: transform .5s;
+    border: 5px solid black;
+}
+ button:hover{
+    transform:scale(0.5);
+
+ }
+
+ output h1{
+    position:absolute;
+ }
+
+ main img {
+    display: flex;
+    border-radius: 50%;
+    padding: 1px;
+    align-items: center;
+    justify-items: center;
+    width: 150px;
+    height: 150px;
+
+}
+.container{
+   width: 600px;
+   padding:5px 0;
+   margin: 5px 0 20px;
+   font-size: 1.2rem;
+   border-radius: 0.3rem;
+   color: #e1e1e1;
+   background-color: #1e1e1e;
+   outline: none;
+
+}
+
+.container form select:focus-visible{
+   outline: dotted 1px rgba(255,255,0,0.4);/* Para ficar os pontinhos*/
+}
